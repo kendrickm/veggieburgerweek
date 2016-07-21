@@ -1,0 +1,57 @@
+<script src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDDWfurT3R7e4sjqIx_7ZpyPvLmyRDQP8"></script>
+<script type="text/javascript" src="javascripts/jquery.googlemap.js"></script>
+
+<div id="map" style="width: 600px; height: 600px;"></div>
+<script type="text/javascript">
+  $(function() {
+    $("#map").googleMap({
+      zoom: 14, // Initial zoom level (optional)
+      coords: [45.5242603, -122.6635785], // Map center (optional)
+      type: "ROADMAP" // Map type (optional)
+    });
+    $("#map").addMarker({
+      coords: [45.51984, -122.6797], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'All-Way', // Unique ID for your marker
+      title: 'All-Way',
+      text: ' ',
+    });
+    $("#map").addMarker({
+      coords: [45.52274, -122.64739], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'Eastburn', // Unique ID for your marker
+      text: 'Eastburn',
+    });
+    $("#map").addMarker({
+      coords: [45.51344, -122.65802], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'WhiteOwl', // Unique ID for your marker
+      text: 'White Owl Social Club',
+    });
+    $("#map").addMarker({
+      coords: [45.52459, -122.6819], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'DeschutesBrewpub', // Unique ID for your marker
+      text: 'Deschutes Brewpub',
+    });
+    $("#map").addMarker({
+      coords: [45.57159, -122.65683], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'BreaksideBrewpub', // Unique ID for your marker
+      text: 'Breakside Brewpub',
+    });
+    $("#map").addMarker({
+      coords: [45.58181, -122.68714], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'SwiftAndUnion', // Unique ID for your marker
+      text: 'Swift and Union',
+    });
+    $("#map").addMarker({
+      coords: [45.54008, -122.61067], // GPS coords
+      //url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'LaurelwoodBrewpub', // Unique ID for your marker
+      text: 'Laurelwood Brewpub',
+    });
+  })
+</script>
